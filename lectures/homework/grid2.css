@@ -1,0 +1,63 @@
+#bosspart{
+    display: grid;
+    grid-template-areas: "nav nav nav" "leftmenu main rightmenu" "leftmenu footer footer";
+}
+#nav{
+    background-color:deepskyblue;
+    grid-area: nav;
+    height: 100px;
+}
+#leftmenu{
+    background-color: darkcyan;
+    grid-area: leftmenu;
+    height: 500px;
+}
+#main{
+    background-color: darkgoldenrod;
+    grid-area: main;
+    height: 400px;
+}
+#rightmenu{
+    background-color: darkgreen;
+    grid-area: rightmenu;
+    height: 400px;
+}
+#footer{
+    background-color: darkorchid;
+    grid-area: footer;
+    height: 100px;
+}
+p{
+    text-align: center;
+    margin-top: 0%;
+}
+.btnav{
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+}
+button:hover{
+    background-color: blue;
+}
+button{
+    border-radius: 20px;
+}
+.btnleft{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+.btnright{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+.btnfoot{
+    display: flex;
+}
+#btnother{
+    position: relative;
+    left: 900px;
+}
